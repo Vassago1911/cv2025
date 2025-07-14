@@ -1,0 +1,146 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Twenty Seconds Curriculum Vitae in LaTex
+% ****************************************
+% 
+% License: MIT
+%
+% For further information please visit:
+% https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper]{twentysecondcv} % a4paper for A4
+\usepackage{eurosym, hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+%% PROFILE SIDE BAR %%
+%%%%%%%%%%%%%%%%%%%%%%
+% personal info
+\profilepic{desk_squirrel.png}          % path of profile pic
+\cvname{Dr. Marc Lange}                   % your name
+\cvjobtitle{Mathematik\\Analytik\\Data Science}          % your actual job position
+\cvaddress{Hamburg, Deutschland}       % address
+\cvnumberphone{ {\href{ https://linkedin.com/in/drmlange}{LinkedIn}}, \href{}{ Frag mich nach Signal} }   % telephone number
+\cvmail{marc@lange-data.org}    % e-mail
+\cvdate{}
+\cvsite{}
+
+\begin{document}
+
+\aboutme{
+Als Doktor in Mathematik hab ich viel Spa\ss ~ an komplexen Rechenmodellen.
+In Business Intelligence und Data Science sehen das andere vor allem als erhellende KPIs von mir. \\[2pt]
+Typische Beispiele: 
+Gutes Targeting f\"ur Marketing, Produktvergleich \"uber verschiedene Lieferant*innen, oder
+gute Pr\"adiktoren f\"ur "Nutzer*in wird kaufen / ihr Abo k\"undigen."\\[4pt]
+
+Besonders m\"ochte ich mit meinen Modellen dazu beitragen, Menschen
+in gute, sachlich fundierte Diskussionen mit Aha-Moment zu bringen.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%Skill bar section, each skill must have a value between 0 an 6 (float)%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\skills{{Trenchbroom, Godot, Blender / 2},{Dashboards, Selenium, Scraping /3},{Docker, Docker Compose /4},{Mobile Marketing /4},{Automatische Empfehlungssysteme/5},{Analytik, Tracking/5},{Linux, bash, zsh, curl, cron/5},{pandas, sklearn, requests/6},{Python, (Postgre*My)SQL /6},{Mathematik, Geometrie, Topologie/6}}
+
+
+\makeprofile
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% END PROFILE SIDE BAR %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%
+%%%%%% BODY %%%%%%
+%%%%%%%%%%%%%%%%%%
+
+\section{Academia}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% TWENTY LIST ITEMS %%%%%%%%%%%%%%%%%%%%%%%%%%
+%%    Four arguments: date; title; where; description %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\\
+\begin{twenty}
+  \twentyitem
+    {2011 - 2015}
+    {Promotion {\normalfont in Mathematik} (Dr. rer. nat.)}
+    {Universit\"at Hamburg, Hamburg}
+    {\href{https://ediss.sub.uni-hamburg.de/handle/ediss/6427}{Multiplicative Structures And Involutions On Algebraic $K$–Theory}}
+  \twentyitem
+    {2005 - 2011}
+    {Diplom {\normalfont Mathematik}}
+    {Universit\"at Hamburg, Hamburg}
+    {(mit Anwendungsfach Informatik)}
+\end{twenty}
+
+\section{Talks, die ich gern gegeben habe}\\
+\begin{twentyshort}
+  \twentyitemshort
+    {\phantom{2005 - }2021}
+    {Back to Basics – Topology of Simplicial Complexes for Business Optimisations, \href{https://www.imsi.institute/activities/topological-data-analysis/}{IMSI TDA 2021}  }\\
+  \twentyitemshort
+    {\phantom{2005 - }2020}
+    {Topological Data Analysis for Data Scientists, \emph{Data Science Meetup, (Google), Hamburg}}
+\end{twentyshort}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%TWENTY LIST SHORTITEMS %%%%%%%%%%%%%
+%%% Two arguments: date; title/description %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Meine Business Stationen}
+
+\begin{twenty}
+  \twentyitem
+    {2023 - }
+    {Freelance Data Science}
+    {}
+    {App-Nutzer*innen Cluster, Lead Listen Scraping, User-Matching}
+  \twentyitem
+    {2023}
+    {Business Intelligence Manager}
+    {ClaraVital, Hamburg}
+    {\begin{itemize}
+    \item Klassifizierung der Shop-Artikel nach erwartbarer Lagerzeit (SQL Server)
+    \item Welche Liste von Nutzer*innen sollte in einer Postwurf-Kampagne vorkommen? (SQL, Python)
+    \end{itemize}}
+  \twentyitem
+    {2019 - 2022}
+    {Data Science Consultant}
+    {elbformat, Hamburg}
+    {\begin{itemize}
+    \item Altbestand an Intranet Artikeln migrieren: Von 60.000 Texten nur noch 6000 relevant, 
+          eine erhebliche Arbeitsreduktion bei der Migration (Python, SQL, Matomo Tracking, Scraping), 
+          und Vereinfachung f\"ur die Leser*innen.
+    \item Extrem schlanker Chatbot f\"ur eine Lesef\"orderapp, der die Lehrer*innen bei der Leseklassen-Verwaltung anleitet.
+    \item Anleitung von 3 juniorigen Data Personen (Python, 
+          SQL, sklearn, pandas, numpy, Tableau)
+    \end{itemize}}
+  \twentyitem
+    {2016 - 2019}
+    {Business Intelligence Analyst / Lead}
+    {AppLike GmbH, Hamburg}
+    {\begin{itemize}
+    \item Automatisches Business-Reporting f\"ur das Gesamtteam als Tagesstart (node.js, Google Sheets, Integration verschiedener Partner-APIs), um t\"aglich Kosten und Umsatz als Feedback zu haben.
+    \item Tracking Tech-Support f\"ur alle Marketing- und Sales-Tracking-URLs (HTTP, REST, Querystring-Magic), damit sowohl wir als auch die Business-Partner*innen die Wirksamkeit unserer Kampagnen messen konnten
+    \item Ad-hoc Analysen, "Impact Plots" f\"ur die Business Teams (Python, Jupyter, SQL, Google Sheets, APIs), um die Wirkung von Einzelfaktoren priorisieren zu k\"onnen.
+    \item Gute und robuste Umsatzvorhersage (LTV Prediction) zur Budgetplanung und Kostenreduktion (APIs, sklearn, Python, SQL), womit jede Marketing Kampagne auf konstant
+    40\% Gewinnanteil gesteuert werden konnte (vorher ca 20\% bei weniger Umsatz). 
+    \item Durchf\"uhrung der Interviews und sp\"ater Einarbeitung der Junior BI Analyst*innen (Google Sheets, Python, SQL).
+    \item Anleitung einer Masterarbeit zu App-Test-Bots (Python, Tensorflow, Funktionalanalysis, Machine Learning, Algorithmik).
+    \end{itemize}}
+\end{twenty}
+
+\section{.. und jetzt?}\\
+Ich habe bislang viel daf\"ur getan, Menschen f\"ur Produkte zu interessieren. 
+Ich w\"urde in Zukunft gern mehr dazu zu tun, dann diese Nutzer*innen auch so zu verstehen, dass sie 
+gern bleiben. Es gibt noch viel Business Wert aus 
+\href{https://en.wikipedia.org/wiki/Netflix_Prize}{"alter Technik"} 
+wie Recommendation Engines zu ziehen, zum Beispiel durch strategisches Erh\"ohen der Problemdimension.
+
+Aber wenn mich jemand als automatisierungsaffine*n Junior Game Level Designer beauftragen und 
+feedbacken m\"ochte, bin ich auch neugierig :D
+
+\end{document}
